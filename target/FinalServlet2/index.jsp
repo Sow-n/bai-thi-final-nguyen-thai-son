@@ -21,7 +21,7 @@
     <body>
         <h1>Search customer information !</h1>
         <h4 style="color: red;">${errorMessage}</h4>
-        <form action="jdbc" method="GET">
+        <form action="CustomerControllerServlet" method="GET">
         Name: <input type="search" name="search" value="<%=searchName %>"/> <button>Search</button>
         </form>
         <br/>

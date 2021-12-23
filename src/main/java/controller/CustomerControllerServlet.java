@@ -58,7 +58,7 @@ public class CustomerControllerServlet extends HttpServlet {
             if ((searchName == null || "".equals(searchName)) && check == 1) {
                 searchName = "";
                 request.setAttribute("errorMessage", "Không được để trống!");
-                request.getRequestDispatcher("index.jsp").forward(request, response);
+                request.getRequestDispatcher("./index.jsp").forward(request, response);
             }
             if(check == 0)
                 searchName = "";
